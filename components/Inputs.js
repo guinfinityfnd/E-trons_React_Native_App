@@ -33,10 +33,10 @@ export default function Inputs ({ navigation }) {
         <KeyboardAvoidingView behavior={Platform.OS === "ios" && "height"}>
           <ScrollView>
           <View style={styles.textContainer}>
-              <Text style={styles.label}>Former Size</Text>
+              <Text style={styles.label}>E-Size</Text>
               <View style={styles.whinput}>
-                <TextInput style={styles.textInputw} placeholder='W' keyboardType='numeric' onChangeText={setFirstWData} maxLength={2}/>
-                <TextInput style={styles.textInputh} placeholder='H' keyboardType='numeric' onChangeText={setFirstHData} maxLength={2}/>
+                <TextInput style={styles.textInputw} placeholder='အူ' keyboardType='numeric' onChangeText={setFirstWData} maxLength={4}/>
+                <TextInput style={styles.textInputh} placeholder='ထု' keyboardType='numeric' onChangeText={setFirstHData} maxLength={4}/>
               </View>
               </View>
               <View style={styles.textContainer}>
